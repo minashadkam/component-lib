@@ -2,9 +2,11 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "./",
     "paths": {
-      "cl": [
-        "./dist/cl"
+      "@ng/cl/src/*": [
+        "projects/cl/src/*/public_api",
+        "projects/cl/src/lib/*/public_api"
       ]
     },
     "outDir": "./dist/out-tsc",

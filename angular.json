@@ -7,7 +7,12 @@
       "projectType": "library",
       "root": "projects/cl",
       "sourceRoot": "projects/cl/src",
-      "prefix": "lib",
+      "prefix": "ngCl",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",

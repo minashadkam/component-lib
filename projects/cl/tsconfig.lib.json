@@ -6,7 +6,13 @@
     "declaration": true,
     "declarationMap": true,
     "inlineSources": true,
-    "types": []
+    "types": [],
+    "paths": {
+      "@ng/cl/src/*": [
+        "projects/cl/src/*/public_api",
+        "projects/cl/src/lib/*/public_api"
+      ]
+    }
   },
   "exclude": [
     "**/*.spec.ts"
