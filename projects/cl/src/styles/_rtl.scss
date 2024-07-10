@@ -1,0 +1,24 @@
+@font-face {
+  font-family: $iran-sans;
+  font-style: normal;
+  src: url($font-path-eot), url($font-path-woff2) format("woff"),
+  url($font-path-tff) format("truetype");
+}
+
+
+button,
+input,
+select,
+textarea,
+label ,
+div , p
+, input,
+ul,li,ol,
+sub,
+strong,h1,h2,h3,h4,h5,b,
+td,th,a,
+option,
+,span:not(.pi) {
+  font-family: $iran-sans, sans-serif;
+}
+

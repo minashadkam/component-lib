@@ -1,0 +1,89 @@
+// Variable overrides first
+
+
+// Then import Bootstrap
+@import "./materialize-color";
+@import "./variables/color-variables";
+@import "./variables/variables";
+@import "./primng-theme/theme";
+@import "./partials/font";
+@import "./partials/icon";
+
+
+@import "./materialize-color";
+@import "./bootstrap-grid/bootstrap-grid.min";
+@import "./normalize";
+
+
+
+*{
+  box-sizing: border-box;
+  font-family:sans-serif;
+}
+
+
+html {
+  font-size: $base-font-size;
+  color: $base-color;
+}
+
+
+
+body{
+  overflow-x: hidden!important;
+  &:dir(rtl){
+    @import "rtl";
+  }
+}
+
+
+
+@font-face {
+  font-family: $material-icon;
+  font-style: normal;
+  font-weight: 400;
+  src: url($material-icon-path-eot); /* For IE6-8 */
+  src: local($material-icon),
+  local($material-icon-regular),
+  url($material-icon-path-woff2) format("woff2"),
+  url($material-icon-path-woff2-regular) format("woff"),
+  url($material-icon-path-tff) format("truetype");
+}
+
+@font-face {
+  font-family: $material-icon-outlined;
+  font-style: normal;
+  font-weight: 400;
+  src: url($material-icons-outlined-woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: $material-icon;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+.material-icons-outlined {
+  font-family: $material-icon-outlined;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}

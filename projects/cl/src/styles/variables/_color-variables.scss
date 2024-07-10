@@ -1,0 +1,44 @@
+
+
+$prim: #2d2f7a;
+$primary: #5f55e6;
+$primary-light: lighten($primary, 8%);
+$primary-light-a: lighten($primary, 35%);
+$primary-light-b: #e9e9f6;
+$primary-dark: darken($primary, 10%);
+
+$info: #50a5f1;
+$info-light: lighten($info, 8%);
+$info-dark: darken($info, 10%);
+
+$secondary: color("pink", "base");
+$secondary-light: lighten($secondary, 8%);
+$secondary-dark: darken($secondary, 10%);
+
+$pink: #f14c7e;
+$pink-light: lighten($pink, 8%);
+$pink-dark: darken($pink, 10%);
+
+$warn: #f1b44c;
+$warn-light: lighten($warn, 8%);
+$warn-dark: darken($warn, 10%);
+
+$success: #34c38f;
+$success-light: lighten($success, 8%);
+$success-dark: darken($success, 10%);
+
+$warning: color("orange", "base");
+$warning-light: lighten($warning, 8%);
+$warning-dark: darken($warning, 10%);
+
+$gray: #74788d;
+$gray-light: lighten($gray, 8%);
+$gray-dark: darken($gray, 10%);
+
+$help: color("purple", "darken-1");
+$help-light: lighten($help, 8%);
+$help-dark: darken($help, 10%);
+
+$danger: #e74e4e;
+$danger-light: lighten($danger, 8%);
+$danger-dark: darken($danger, 10%);
