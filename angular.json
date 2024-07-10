@@ -5,21 +5,26 @@
   "projects": {
     "cl": {
       "projectType": "library",
-      "root": "projects/cl",
-      "sourceRoot": "projects/cl/src",
-      "prefix": "lib",
+      "root": "",
+      "sourceRoot": "/src",
+      "prefix": "ngCl",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/cl/ng-package.json"
+            "project": "./ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/cl/tsconfig.lib.prod.json"
+              "tsConfig": "./tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/cl/tsconfig.lib.json"
+              "tsConfig": "./tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -27,7 +32,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "tsConfig": "projects/cl/tsconfig.spec.json",
+            "tsConfig": "./tsconfig.spec.json",
             "polyfills": [
               "zone.js",
               "zone.js/testing"
